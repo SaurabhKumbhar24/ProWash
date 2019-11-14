@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="Pro.Wash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Google Maps Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission
+        android:name="com.example.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginAndSignUp.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAndSignUp.LoginActivity" />
+        <activity android:name=".LoginAndSignUp.PhoneVerification" />
+        <activity android:name=".HomeActivity.HomeActivity" />
+        <activity
+            android:name=".Customer.MyAccount"
+            android:parentActivityName=".HomeActivity.HomeActivity" />
+        <activity android:name=".LoginAndSignUp.TestSignUp" />
+        <activity android:name=".Customer.ImageManager" />
+        <activity android:name=".Customer.ReferAndEarn" />
+        <activity android:name=".Customer.PlaceOrder" />
+        <activity android:name=".LoginAndSignUp.Welcome" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".Customer.MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <!-- Client Home Activity -->
+        <activity android:name=".HomeActivity.HomeActivityWashingCenter" />
+        <activity android:name=".Customer.AddressManager" />
+        <activity android:name=".Customer.Rate_Card" />
+        <activity android:name=".HomeActivity.HomeActivityManager" />
+        <activity android:name=".Customer.MyOrders" />
+        <activity android:name=".Manager.RateCardManager" />
+        <activity android:name=".Manager.CustomerTypeManager" />
+        <activity android:name=".Manager.OfferManager" />
+        <activity android:name=".Manager.addOffers" />
+        <activity android:name=".Customer.CustomerOffers" />
+        <activity android:name=".Client.OrderManagerClient" />
+
+        <service android:name="models.FireBaseMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="models.FireIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Customer.NotificationsForCustomer" />
+        <activity android:name=".Customer.TrackOrder"></activity>
+    </application>
+
+</manifest>
