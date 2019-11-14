@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "887343986937",
+    "firebase_url": "https://prowash-e8533.firebaseio.com",
+    "project_id": "prowash-e8533",
+    "storage_bucket": "prowash-e8533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887343986937:android:6c2246502c33fee7",
+        "android_client_info": {
+          "package_name": "Pro.Wash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887343986937-np4c8417kfn4ggil11e4v9lb8jhte5ra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Pro.Wash",
+            "certificate_hash": "eee71aea6baf629d89d0ca1a9500ea1f5ed65a1f"
+          }
+        },
+        {
+          "client_id": "887343986937-ur5pehvun3ueedrdoh96ha9sh03ekui7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9CEo_LEPRXgZt7M8VR_FaMecIjDuWUXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887343986937-ur5pehvun3ueedrdoh96ha9sh03ekui7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
