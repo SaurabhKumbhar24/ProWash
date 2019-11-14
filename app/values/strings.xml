@@ -1,0 +1,250 @@
+<resources>
+    <string name="app_name">Pro Wash</string>
+
+    <!-- Welcome Slider Strings -->
+    <string name="slider_title_here">Title Here</string>
+    <string name="slider_descriptionhere">DescriptionHere</string>
+    <string name="todo">TODO</string>
+    <string name="Welcome">Welcome</string>
+    <string name="Skip">Skip</string>
+    <string name="mypreferences">my_preferences</string>
+    <string name="mypreferencekey">my_preference_key</string>
+
+    <!-- Login Activity Strings -->
+    <string name="Phone">Phone No</string>
+    <string name="Passwordinput">Password</string>
+    <string name="Login">LOG IN</string>
+    <string name="SignUp">SIGN UP</string>
+    <string name="ForgotPassword">Forgot Password ?</string>
+    <string name="ImageLogin">LoginImage</string>
+
+    <!-- SignUp Activity Strings -->
+    <string name="FirstName">First Name</string>
+    <string name="LastName">Last Name</string>
+    <string name="NameQuestion">What Is Your Name ?</string>
+    <string name="NextButton">Next</string>
+    <string name="PhoneQuestion">What Is Your Phone Number ?</string>
+    <string name="GetOtp">GET OTP</string>
+    <string name="Verify">VERIFY</string>
+    <string name="EnterOTP">Enter OTP</string>
+    <string name="ResendOTP">Resend</string>
+    <string name="OTP">OTP</string>
+    <string name="SetPassword">Privacy Is Our Priority</string>
+    <string name="Password">Enter Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="NoteForPassword">NOTE : Password Must Contain Minimum 8 Characters</string>
+    <string name="CreateAccount">Create Account</string>
+    <string name="Email">Email Id</string>
+    <string name="PhoneNoOrEmailId">Email/Phone</string>
+    <string name="PhoneEmail">Email Or Phone</string>
+    <string name="LOGIN">Already Have Account? Login</string>
+    <string name="DHASignUp">Don\'t have an account? Sign up.</string>
+    <string name="zero">0</string>
+    <string name="INDIACODE">+91</string>
+
+    <!-- Home Activity Strings -->
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Home">Home</string>
+    <string name="ReferAndEarn">Refer And Earn</string>
+    <string name="MyOrders">My Orders</string>
+    <string name="TermsAndCondition">Terms And Conditions</string>
+    <string name="MyAccount">My Account</string>
+    <string name="Settings">Settings</string>
+    <string name="AboutUs">About Us</string>
+    <string name="CustomerService">Customer Service</string>
+    <string name="CustomerPhoto">CustomerPhoto</string>
+    <string name="SignOut">Sign Out</string>
+
+    <!-- My Account Activity Strings -->
+    <string name="EditAcc">Edit Account</string>
+    <string name="FullName">Name</string>
+    <string name="Address">Address</string>
+    <string name="SaveChan">Save Changes</string>
+    <string name="EmailVerifyTrue">Verified!!</string>
+    <string name="EmailVerifyFalse">Not Verified!!</string>
+    <string name="ProfilePics">Choose Photo</string>
+    <string name="UploadPics">Upload Photo</string>
+    <string name="refresh">Refresh</string>
+    <string name="change">Change</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_password_dialog">ConfirmPasswordDialog</string>
+
+    <!-- Testing -->
+    <string name="Intro">I Want To Know More About You</string>
+    <string name="Intrested">I am Intrested!!!</string>
+
+    <!-- Home Activity Strings -->
+    <string name="Welcome_Questions">Welcome To ProWash</string>
+    <string name="EmailQuestion">What Is Your EmailId ?</string>
+    <string name="PasswordQuestion">For Privacy Set Password</string>
+    <string name="AddressQuestion">Add Address For Communication</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="confirm_image">Confirm Image</string>
+    <string name="gender">Gender</string>
+    <string name="saved_address">Saved Address</string>
+
+    <!-- Refer And Earn -->
+    <string name="Invite_Contacts">Invite Contacts</string>
+    <string name="share_your_referral_code">Share Your Referral Code</string>
+    <string name="or_share_via">******* Or Share Via *******</string>
+
+    <!-- Place Order -->
+    <string name="rate_card">Rate Card</string>
+    <string name="PlaceOrder">Place Order</string>
+    <string name="saved_places">Saved Places</string>
+    <string name="address">Address</string>
+    <string name="add_address">Add new Address</string>
+    <string name="Work">Work</string>
+    <string name="account_information">Account Information</string>
+    <string name="edit">EDIT</string>
+    <string name="order_type">Order Type</string>
+    <string name="wash_fold">WASH + FOLD</string>
+    <string name="wash_iron">WASH + IRON</string>
+    <string name="dry_clean">DRY CLEAN</string>
+    <string name="select_pickup_address">Select Pickup Address</string>
+    <string name="saved_address_1">SELECT SAVED ADDRESS</string>
+    <string name="select_pickup_time_slot">Select Pickup Time Slot</string>
+    <string name="pickup_date">Pickup Date</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string-array name="TimeSlot">
+        <item> Pickup Time </item>
+        <item> 8:00 AM to 10:00 AM </item>
+        <item> 10:00 AM to 12:00 PM </item>
+        <item> 12:00 PM to 2:00 PM </item>
+        <item> 2:00 PM to 4:00 PM </item>
+        <item> 4:00 PM to 6:00 PM </item>
+        <item> 6:00 PM to 8:00 PM </item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="address_using_google_maps">Address Using Google Maps</string>
+    <string name="or_enter_full_address">Or Enter Full Address</string>
+    <string name="flat_plot_no">Flat/Plot No.</string>
+    <string name="building_name">Building/Society Name</string>
+    <string name="phone_email">Phone/Email</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address_manager">Address Manager</string>
+    <string name="wash_and_fold">Wash And Fold</string>
+    <string name="offers">Offers</string>
+    <string name="customer_type">Customer Type</string>
+    <string name="select_customer_type">Select Customer Type</string>
+    <string name="change_customer_type">Change Customer Type</string>
+    <string name="wash_and_iron">Wash And Iron</string>
+    <string name="rs">Rs</string>
+    <string name="kg">Kg</string>
+    <string name="slash">/</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="facebook">Facebook</string>
+    <string name="logo">logo</string>
+    <string name="tagline">We care, you wear.</string>
+    <string name="reject">REJECT</string>
+    <string name="accept">ACCEPT</string>
+    <string name="no_more_orders">No more orders</string>
+    <string name="order_id">Order Id</string>
+    <string name="order_id_hash">Order Id #</string>
+    <string name="order_type_colon">Order Type  :</string>
+    <string name="pickup_date_colon">Pickup Date :</string>
+    <string name="pickup_time_colon">Pickup Time :</string>
+    <string name="no_more_address">No more Address</string>
+    <string name="flat_no_colon">Flat No :</string>
+    <string name="society_colon">Society :</string>
+    <string name="locality_colon">Locality :</string>
+    <string name="not_verified">Not Verified</string>
+    <string name="offers_manager">Offers Manager</string>
+    <string name="promocode">Promocode</string>
+    <string name="add_promocode">Add Promocode</string>
+    <string name="discount">Discount</string>
+    <string name="discount_in_percentage">Discount in Percentage</string>
+    <string name="upto_rs">Upto Rs</string>
+    <string name="add_offer">Add Offer</string>
+    <string name="use_code">USE CODE :</string>
+    <string name="terms_and_conditions_applied">*Terms And Conditions applied</string>
+    <string name="off_on_order">Off on order</string>
+    <string name="get_upto_rs">Get upto Rs</string>
+    <string name="no_more_offers">No more offers</string>
+    <string name="delete">delete</string>
+    <string name="order_id_colon">Order Id    :</string>
+    <string name="out_for_pickup">Out for Pickup</string>
+    <string name="sync">sync</string>
+    <string name="enter_referral_code">Enter Referral Code</string>
+    <string name="referral">Referral :</string>
+    <string name="more_options1">More Options</string>
+    <string name="your_referral_code">Your Referral Code</string>
+    <string name="copy_code">Copy Code</string>
+    <string name="order_manager">Order Manager</string>
+    <string name="order_details">Order details</string>
+    <string name="shipping_address">Shipping address</string>
+    <string name="order_status_colon">Order Status :</string>
+    <string name="order_tracking">Order Tracking</string>
+    <string name="log_in">Log in</string>
+    <string name="phone_number_email_address">Phone number, email address</string>
+    <string name="or">Or</string>
+    <string name="checking">checking</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel1">cancel</string>
+    <string name="update">Update</string>
+    <string name="maharashtra_india">Maharashtra India</string>
+    <string name="test_society_name">test Society Name</string>
+    <string name="test_flat_no">test Flat No.</string>
+    <string name="test_address_0">Test Address 0</string>
+    <string name="update_address">update address</string>
+    <string name="bill">Bill</string>
+    <string name="view_receipt">View Receipt</string>
+    <string name="help">Help</string>
+    <string name="get_help">Get Help ?</string>
+    <string name="track">Track</string>
+    <string name="track_order">Track Order</string>
+    <string name="weight_of_clothes">Weight Of Clothes</string>
+    <string name="weight_in_kgs">Weight in Kgs</string>
+    <string name="splashscreen">splashscreen</string>
+    <string name="pay_bill">Pay Bill</string>
+    <string name="register">Register</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="_999999999">999999999</string>
+    <string name="forgotten_your_password_get_help">Forgotten your password ?Get help</string>
+    <string name="enter_address_city_or_zip_code">Enter Address, City or Zip Code</string>
+    <string name="add_address_n">Add Address</string>
+    <string name="dry_clean_DC">Dry Clean</string>
+
+    <string-array name="Dry_Clean">
+        <item>Shirt</item>
+        <item>T-Shirt</item>
+        <item>Safari</item>
+        <item>Suit</item>
+        <item>Blazer</item>
+        <item>Jacket</item>
+        <item>Kurta</item>
+        <item>Cotton</item>
+        <item>Sherwani</item>
+        <item>Kameez</item>
+        <item>Cotton Kameez</item>
+        <item>Silk Kameez</item>
+        <item>Long Kameez</item>
+        <item>Work Trouser</item>
+        <item>Pyjama</item>
+        <item>Sweater</item>
+        <item>Saree</item>
+        <item>Dupatta</item>
+        <item>Accessories</item>
+        <item>Blanket Single</item>
+        <item>Blanket Double</item>
+    </string-array>
+
+    <string-array name="CustomerType">
+        <item>Select Customer Type</item>
+        <item>Client</item>
+        <item>Customer</item>
+    </string-array>
+
+</resources>

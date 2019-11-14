@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.MyOrders"
+    android:background="@color/FaintBlue">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/MOToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/MyOrders"
+        app:navigationIcon="@drawable/ic_left_arrow"
+        app:titleTextColor="@color/MediumBlue">
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/ProgressBarMyOrders"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/MOToolbar"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <RelativeLayout
+        android:id="@+id/OLLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MOToolbar"
+        android:padding="10dp">
+
+        <ListView
+            android:id="@+id/CustomerOrdersList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CustomerOrdersList"
+            android:text="@string/no_more_orders"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_border"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

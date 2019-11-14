@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager.addOffers">
+
+    <!--Toolbar Layout-->
+    <RelativeLayout
+        android:id="@+id/ToolbarLayoutAFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolbarAFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MediumBlue"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="@string/add_offer"
+            app:navigationIcon="@drawable/ic_left_arrow_white"
+            app:titleTextColor="@color/White">
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ToolbarLayoutAFM"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/PromocodeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/promocode"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <EditText
+            android:id="@+id/Promocode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PromocodeTV"
+            android:inputType="text"
+            android:hint="@string/add_promocode"
+            />
+
+        <TextView
+            android:id="@+id/DiscountTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Promocode"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:text="@string/discount"/>
+
+        <EditText
+            android:id="@+id/Discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/DiscountTV"
+            android:hint="@string/discount_in_percentage"/>
+
+        <TextView
+            android:id="@+id/UptoRsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Discount"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:text="@string/upto_rs"/>
+
+        <EditText
+            android:id="@+id/Upto_Rs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/UptoRsTV"
+            android:hint="@string/upto_rs"/>
+
+        <TextView
+            android:id="@+id/TermsTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Upto_Rs"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:text="@string/TermsAndCondition"/>
+
+        <EditText
+            android:id="@+id/Terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_below="@+id/TermsTV"
+            android:hint="@string/TermsAndCondition"
+            />
+
+        <Button
+            android:id="@+id/Add_Offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Terms"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_offer"
+            android:background="@drawable/mediumblue_border"
+            android:textColor="@color/White"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

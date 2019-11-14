@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.AddressManager"
+    android:background="@color/Grey">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/AMToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/address_manager"
+        app:navigationIcon="@drawable/ic_left_arrow"
+        app:titleTextColor="@color/MediumBlue">
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/AddLocationBtn"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_add_location_black_24dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/AMpbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AMToolbar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AMpbar"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/HomeMap"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/homeaddresspic"
+            android:padding="10dp"
+            android:text="@string/Home"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/HomeAddress"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/WorkMap"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/homeaddresspic"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Work"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/WorkAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:padding="10dp"
+            android:textColor="@color/Black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

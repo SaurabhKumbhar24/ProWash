@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity.HomeActivityManager">
+
+
+    <!--Toolbar Layout-->
+    <RelativeLayout
+        android:id="@+id/ToolbarLayoutHAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/app_name"
+        app:navigationIcon="@drawable/ic_home"
+        app:titleTextColor="@color/MediumBlue">
+    </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ToolbarLayoutHAM"
+        android:background="@color/FaintBlue"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/OpenRateCard"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/white_border"
+            android:text="@string/rate_card"
+            android:textColor="@color/MediumBlue"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/OpenCustomertype"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/OpenRateCard"
+            android:background="@drawable/white_border"
+            android:text="@string/customer_type"
+            android:textColor="@color/MediumBlue"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/OpenOffers"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/OpenCustomertype"
+            android:background="@drawable/white_border"
+            android:text="@string/offers_manager"
+            android:textColor="@color/MediumBlue"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

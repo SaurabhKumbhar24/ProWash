@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/COrderIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        />
+
+    <RelativeLayout
+        android:id="@+id/CTextView_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/COrderIdTV"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/CTest_Order_Type"
+            android:layout_width="120dp"
+            android:layout_height="24dp"
+            android:text="@string/order_type_colon"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_hangingcloth"/>
+
+        <TextView
+            android:id="@+id/CTest_Pickup_Date"
+            android:layout_width="120dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/pickup_date_colon"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_calendar"
+            android:layout_below="@+id/CTest_Order_Type"/>
+
+        <TextView
+            android:id="@+id/CTest_Pickup_Time"
+            android:drawablePadding="10dp"
+            android:layout_width="120dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/clock"
+            android:layout_below="@+id/CTest_Pickup_Date"
+            android:gravity="center"
+            android:text="@string/pickup_time_colon"/>
+
+        <TextView
+            android:id="@+id/CtoSetOrderType"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:drawablePadding="10dp"
+            android:layout_toEndOf="@+id/CTest_Order_Type"
+            android:gravity="center"
+            android:text="Dry Clean"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/MediumBlue" />
+
+        <TextView
+            android:id="@+id/CtoSetPickupDate"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/CtoSetOrderType"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/CTest_Pickup_Date"
+            android:gravity="center"
+            android:text="9/11/2018"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/MediumBlue" />
+
+        <TextView
+            android:id="@+id/CtoSetPickupTime"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/CtoSetPickupDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/CTest_Pickup_Time"
+            android:gravity="center"
+            android:text="2 pm to 4 pm"
+            android:textColor="@color/MediumBlue" />
+    </RelativeLayout>
+
+</RelativeLayout>

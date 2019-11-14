@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/FaintFaint"
+    tools:context=".LoginAndSignUp.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:padding="10dp"
+        android:background="@color/MediumBlue"
+        android:textAlignment="center"
+        android:elevation="5dp"
+        android:textColor="@color/White"
+        android:text="@string/log_in"
+        android:textAllCaps="true"
+        android:autoSizeTextType="uniform"
+        />
+
+    <ProgressBar
+        android:id="@+id/LoginProgress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="33sp"
+        android:textColor="@color/Black" />
+
+    <EditText
+        android:id="@+id/EmailID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="10dp"
+        android:background="@color/White"
+        android:inputType="text|textEmailAddress"
+        android:hint="@string/phone_number_email_address"
+        android:autofillHints="null" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_lock_outline_mediumblue_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:background="@color/White"
+        android:layout_marginTop="10dp"
+        android:hint="@string/Passwordinput"
+        android:autofillHints="null" />
+
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/MediumBlue"
+        android:text="@string/Login"
+        android:textColor="@color/White"/>
+
+    <Button
+        android:id="@+id/ForgotPasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Black"
+        android:text="@string/forgotten_your_password_get_help"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="135dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/Black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:textAllCaps="true"
+            android:textColor="@color/Black"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            />
+
+        <View
+            android:layout_width="135dp"
+            android:layout_height="1dp"
+            android:background="@color/Black"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/DHASignUp"
+        android:background="@color/White"
+        android:textColor="@color/MediumBlue"
+        />
+
+</LinearLayout>

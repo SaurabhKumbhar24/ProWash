@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/White">
+
+    <TextView
+        android:id="@+id/AddressHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:padding="10dp"
+        android:text="@string/test_address_0"
+        android:background="@color/White"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/White">
+
+        <TextView
+            android:id="@+id/FlatNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flat_no_colon"
+            />
+
+        <TextView
+            android:id="@+id/Society"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FlatNo"
+            android:text="@string/society_colon"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/Locality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Society"
+            android:layout_marginTop="5dp"
+            android:text="@string/locality_colon"/>
+
+        <TextView
+            android:id="@+id/SetFlatNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/FlatNo"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/MediumBlue"
+            android:text="@string/test_flat_no"/>
+
+        <TextView
+            android:id="@+id/SetSociety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Society"
+            android:layout_below="@+id/FlatNo"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/MediumBlue"
+            android:text="@string/test_society_name"/>
+
+        <TextView
+            android:id="@+id/SetLocality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Society"
+            android:layout_toEndOf="@+id/Locality"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/maharashtra_india"
+            android:textColor="@color/MediumBlue"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

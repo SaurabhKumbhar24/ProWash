@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:background="@color/White"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_of_clothes"
+        android:textColor="@color/White"
+        android:background="@drawable/mediumblue_border"
+        android:textAlignment="center"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/WeightsOfClothes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight_in_kgs"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelweight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            style="?android:attr/buttonBarStyle"
+            android:text="@string/cancel"
+            android:textColor="@color/Black"
+            android:background="@color/FaintBlue"/>
+
+        <Button
+            android:id="@+id/confirmweight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarStyle"
+            android:layout_weight="50"
+            android:background="@color/MediumBlue"
+            android:textColor="@color/Black"
+            android:textAlignment="center"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+</LinearLayout>

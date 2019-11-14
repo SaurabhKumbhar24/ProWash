@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.PlaceOrder"
+    android:id="@+id/PlaceOrderLayout"
+    android:background="@color/White">
+
+    <!--Toolbar Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ToolbarLayout">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/PlaceOrderToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/MediumBlue"
+        app:navigationIcon="@drawable/ic_left_arrow_white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/PlaceOrder"
+        app:titleTextColor="@color/White">
+    </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <!--ORDER TYPE LAYOUT-->
+    <RelativeLayout
+        android:id="@+id/OrderTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToolbarLayout">
+        <!--ORDER TYPE TEXT-->
+        <TextView
+            android:id="@+id/OrderTypeText"
+            android:layout_height="wrap_content"
+            android:layout_width="330dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/order_type"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:background="@color/FaintBlue"
+            />
+        <!--ORDER TYPE BUTTON LAYOUT-->
+        <RelativeLayout
+            android:id="@+id/OrderTypeButtonLayout"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:numColumns="3"
+            android:layout_below="@+id/OrderTypeText">
+
+            <!--Wash And Fold Button And Text View-->
+            <Button
+                android:id="@+id/WashAndFoldBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/pobutton2"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/WashAndFoldTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WashAndFoldBtn"
+                android:layout_marginTop="2dp"
+                android:text="@string/wash_fold"
+                android:textAlignment="center"
+                android:textColor="@color/Black"/>
+
+            <!--Wash And Iron Button And Text View-->
+            <Button
+                android:id="@+id/WashAndIronBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/WashAndFoldBtn"
+                android:background="@drawable/pobutton3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/WashAndIronTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WashAndIronBtn"
+                android:layout_toEndOf="@+id/WashAndFoldTextView"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/Black"
+                android:text="@string/wash_iron"
+                android:textAlignment="center"/>
+
+            <!--Dry Clean Button And Text View-->
+            <Button
+                android:id="@+id/DryCleanBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toEndOf="@+id/WashAndIronBtn"
+                android:background="@drawable/dryclean"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"/>
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DryCleanBtn"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/WashAndIronTextView"
+                android:layout_marginStart="15dp"
+                android:text="@string/dry_clean"
+                android:textColor="@color/Black"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--SELECT PICKUP ADDRESS LAYOUT-->
+    <RelativeLayout
+        android:id="@+id/PickupAddressLayout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/OrderTypeLayout">
+
+        <!--Select Address Text View-->
+        <TextView
+            android:id="@+id/SelectPickupAddressTextView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/FaintBlue"
+            android:text="@string/select_pickup_address"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <!--Saved Address Text View-->
+        <TextView
+            android:id="@+id/SavedAddressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saved_address_1"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/SelectPickupAddressTextView"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <!--Add Address Text View-->
+        <TextView
+            android:id="@+id/AddAddressTextView"
+            android:drawableStart="@drawable/ic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address"
+            android:drawablePadding="10dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/SavedAddressTextView"
+            />
+
+        <ImageView
+            android:id="@+id/TickImageView"
+            android:layout_width="50dp"
+            android:contentDescription="@string/checking"
+            android:layout_height="50dp"
+            android:layout_below="@+id/SelectPickupAddressTextView"
+            android:background="@drawable/tick"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+
+    <!--PICKUP TIME SLOT LAYOUT-->
+    <RelativeLayout
+        android:id="@+id/PickupTimeSlotLayout"
+        android:layout_width="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PickupAddressLayout">
+
+        <!--Select Pickup Time Slot-->
+        <TextView
+            android:id="@+id/PickupTimeSlotTextView"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:background="@color/FaintBlue"
+            android:textColor="@color/Black"
+            android:text="@string/select_pickup_time_slot"/>
+
+        <!--Select Pickup Date-->
+        <EditText
+            android:id="@+id/DateForPickup"
+            android:layout_marginTop="10dp"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PickupTimeSlotTextView"
+            android:hint="@string/pickup_date"
+            android:inputType="date"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_calendar"/>
+
+        <!--Select Pickup Time-->
+        <Spinner
+            android:id="@+id/TimeForPickupSpinner"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/DateForPickup"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            style="@style/spinner_style"
+            />
+
+    </RelativeLayout>
+
+    <!--Place Order Button-->
+    <RelativeLayout
+        android:id="@+id/PlaceOrderButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/PickupTimeSlotLayout"
+        >
+
+        <Button
+            android:id="@+id/Place_Order_Button"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/MediumBlue"
+            android:text="@string/PlaceOrder"
+            android:textColor="@color/White"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <!--Select Address-->
+    <LinearLayout
+        android:id="@+id/AddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/FaintBlue"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="10dp"
+            android:text="@string/Home"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/HomeAddressPO"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:background="@color/White"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_work"
+            android:drawablePadding="10dp"
+            android:text="@string/Work"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/WorkAddressPO"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:background="@color/White"/>
+
+    </LinearLayout>
+</RelativeLayout>

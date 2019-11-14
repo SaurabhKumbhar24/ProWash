@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.ReferAndEarn"
+    android:background="@color/Grey">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ReferAndEarnToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/White"
+        app:navigationIcon="@drawable/ic_left_arrow"
+        app:title="@string/ReferAndEarn"
+        android:elevation="10dp"
+        app:titleTextColor="@color/MediumBlue">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ReferAndEarnToolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Introduction Of Refer And Earn-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/referandearn"
+            android:id="@+id/IntroduceReferAndEarn">
+        </RelativeLayout>
+
+        <!--Refer App Layout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@+id/IntroduceReferAndEarn"
+            android:layout_marginTop="10dp"
+            android:background="@color/White"
+            android:id="@+id/ReferAppLayout">
+
+            <!--Share Your Referral Code-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/share_your_referral_code"
+                android:textColor="@color/Black"
+                android:id="@+id/ShareReferralCode"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"/>
+
+            <!--Invite Contacts Button-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/Invite_Contacts"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@drawable/mediumblue_border"
+                android:layout_below="@+id/ShareReferralCode"
+                android:id="@+id/InviteContacts"/>
+
+            <TextView
+                android:id="@+id/OrShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or_share_via"
+                android:layout_below="@+id/InviteContacts"
+                android:textColor="@color/Black"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/WhatsApp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/OrShare"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_whatsapp"/>
+
+            <Button
+                android:id="@+id/Facebook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/OrShare"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_facebook"/>
+
+            <Button
+                android:id="@+id/MoreOptions"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/OrShare"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/ic_more_options"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WhatsApp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:text="@string/whatsapp"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Facebook"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/facebook"
+                android:textColor="@color/Black"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MoreOptions"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:text="@string/more_options1"/>
+
+            <TextView
+                android:id="@+id/YRC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:layout_marginStart="2dp"
+                android:text="@string/your_referral_code"
+                android:textColor="@color/Black"/>
+
+            <TextView
+                android:id="@+id/ActualReferCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_toEndOf="@+id/YRC"
+                android:layout_alignParentBottom="true"
+                />
+
+            <TextView
+                android:id="@+id/CopyReferralCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/Black"
+                android:textAllCaps="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/copy_code"
+                android:drawableStart="@drawable/ic_copy_code"
+                android:drawablePadding="5dp"
+                />
+            </RelativeLayout>
+
+        <!--Enter Referral Code If Any-->
+        <RelativeLayout
+            android:id="@+id/ReferralcodeenterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ReferAppLayout"
+            android:background="@color/White"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"
+                android:text="@string/referral"/>
+
+            <EditText
+                android:id="@+id/EnterReferralCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:inputType="textCapCharacters"
+                android:layout_centerInParent="true"
+                android:hint="@string/enter_referral_code"/>
+
+            <TextView
+                android:id="@+id/ConfirmReferralCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_checked"
+                android:text="ok"
+                android:gravity="center"
+                android:textColor="@color/Black"
+                android:drawablePadding="10dp"
+                />
+        </RelativeLayout>
+
+        <!--If Referred Successfully-->
+        <RelativeLayout
+            android:id="@+id/IfRefer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_below="@+id/ReferAppLayout"
+            android:background="@color/White"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/ReferralStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/LightGreen"
+                android:drawableEnd="@drawable/ic_check_circle_black_24dp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

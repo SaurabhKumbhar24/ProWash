@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ClothesList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/MediumBlue"
+        />
+
+    <TextView
+        android:id="@+id/ClothesRateList"
+        android:layout_width="100dp"
+        android:textColor="@color/MediumBlue"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

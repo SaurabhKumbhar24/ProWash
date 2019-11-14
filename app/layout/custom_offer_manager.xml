@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/White">
+
+        <ImageView
+            android:id="@+id/ImageOffer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_home"/>
+
+        <TextView
+            android:id="@+id/UptoOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/MediumBlue"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/ImageOffer"
+            android:text="@string/get_upto_rs"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/UptoRO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="30"
+            android:textColor="@color/MediumBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/UptoOff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/MediumBlue"
+            android:text="@string/off_on_order"
+            android:layout_toEndOf="@+id/UptoRO"/>
+
+        <TextView
+            android:id="@+id/UseCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UptoOff"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ImageOffer"
+            android:textColor="@color/Black"
+            android:text="@string/use_code"/>
+
+        <TextView
+            android:id="@+id/ProCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/UseCode"
+            android:layout_below="@+id/UptoOff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:text="TEST"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/TnCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ProCode"
+            android:layout_marginTop="25dp"
+            android:text="@string/terms_and_conditions_applied"
+            android:textColor="@color/Red" />
+    </RelativeLayout>
+
+</RelativeLayout>

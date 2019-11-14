@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Customer.TrackOrder">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/TrackOrderToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/track_order"
+        app:navigationIcon="@drawable/ic_left_arrow"
+        app:titleTextColor="@color/MediumBlue">
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/bline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/TrackOrderToolbar"
+        android:background="@color/Grey"
+        />
+
+    <TextView
+        android:id="@+id/OrderDetailsIdCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/bline"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressB"
+        android:layout_below="@+id/OrderDetailsIdCustomer"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressDrawable="@drawable/custom_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="20"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/OrderStat"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/Grey">
+
+        <LinearLayout
+            android:id="@+id/ODLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/White"
+                android:padding="10dp"
+                android:text="@string/shipping_address"
+                android:textColor="@color/Black" />
+
+            <TextView
+                android:id="@+id/OrderNameCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/White"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/MediumBlue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/OrderAddressCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/White"
+                android:padding="10dp"
+                android:textColor="@color/MediumBlue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/OrderPlacedOn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressB"
+        android:layout_alignTop="@+id/progressB"
+        android:layout_marginStart="-47dp"
+        android:layout_marginTop="196dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/OrderPickedOn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressB"
+        android:layout_alignTop="@+id/progressB"
+        android:layout_marginStart="-22dp"
+        android:layout_marginTop="21dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/OrderDeliveredOn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/OrderPlacedOn"
+        android:layout_marginStart="-24dp"
+        android:layout_marginTop="-5dp"
+        android:layout_toEndOf="@+id/progressB"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/OrderStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mediumblue_border"
+        android:textColor="@color/White"
+        android:padding="10dp"/>
+
+</RelativeLayout>

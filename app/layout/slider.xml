@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slideLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/White">
+
+    <ImageView
+        android:id="@+id/slideimg"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/sliderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/slider_title_here"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sliderdescription"
+        android:layout_width="275dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="@string/slider_descriptionhere"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/MediumBlue"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager.OfferManager"
+    android:background="@color/Grey">
+
+    <!--Toolbar Layout-->
+    <RelativeLayout
+        android:id="@+id/ToolbarLayoutOFM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolbarOFM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="@string/offers_manager"
+            app:navigationIcon="@drawable/ic_left_arrow"
+            app:titleTextColor="@color/MediumBlue">
+        </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:id="@+id/AddOfferBtn"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_add"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToolbarLayoutOFM"
+        android:padding="10dp">
+
+    <ListView
+        android:id="@+id/PromocodeList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="5dp">
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PromocodeList"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_border"
+        android:padding="10dp"
+        android:text="@string/no_more_offers"
+        android:textAlignment="center"/>
+
+    </RelativeLayout>
+</RelativeLayout>

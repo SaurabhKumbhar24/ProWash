@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_MyAccount"
+            android:title="@string/MyAccount"
+            android:icon="@drawable/ic_myaccount_icon"
+            />
+
+        <item
+            android:id="@+id/nav_MyOrders"
+            android:title="@string/MyOrders"
+            android:icon="@drawable/ic_online_shop"/>
+
+        <item
+            android:id="@+id/nav_Offers"
+            android:title="@string/offers"
+            android:icon="@drawable/ic_offers"
+            />
+
+        <item
+            android:id="@+id/nav_ReferAndEarn"
+            android:title="@string/ReferAndEarn"
+            android:icon="@drawable/ic_sharing"
+            />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/address_manager"
+            android:icon="@drawable/ic_location_on_black_24dp"/>
+
+
+    </group>
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_CustomerService"
+            android:title="@string/CustomerService"
+            android:icon="@drawable/ic_help_operator"/>
+
+        <item
+            android:id="@+id/nav_AboutUs"
+            android:title="@string/AboutUs"
+            android:icon="@drawable/ic_about_us"/>
+
+        <item
+            android:id="@+id/nav_SignOut"
+            android:title="@string/SignOut"
+            android:icon="@drawable/ic_exit"/>
+
+    </group>
+
+</menu>

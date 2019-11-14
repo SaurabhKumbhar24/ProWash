@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/client_nav_MyAccount"
+            android:title="@string/MyAccount"
+            android:icon="@drawable/ic_myaccount_icon"
+            />
+
+        <item
+            android:id="@+id/client_nav_MyOrders"
+            android:title="@string/order_manager"
+            android:icon="@drawable/ic_online_shop"/>
+
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/client_nav_SignOut"
+            android:title="@string/SignOut"
+            android:icon="@drawable/ic_exit"/>
+
+    </group>
+
+
+</menu>

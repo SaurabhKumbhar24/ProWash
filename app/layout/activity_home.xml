@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    style="@style/AppTheme.NoActionBar"
+    tools:context=".HomeActivity.HomeActivity"
+    android:id="@+id/DrawerLayout"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Toolbar Layout-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/TLay"
+            android:layout_height="wrap_content"
+            android:elevation="10dp">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/MediumBlue"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="@string/app_name"
+                app:navigationIcon="@drawable/ic_toggle"
+                app:titleTextColor="@color/White">
+            </android.support.v7.widget.Toolbar>
+
+            <Button
+                android:id="@+id/NotificationBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="31dp"
+                android:background="@drawable/notification" />
+        </RelativeLayout>
+
+        <!--Image Offers Layout -->
+        <HorizontalScrollView
+            android:id="@+id/HSView"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/TLay"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="0dp">
+            <LinearLayout
+                android:id="@+id/LinearSlider"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="10dp">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View
+            android:id="@+id/Line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/HSView"
+            android:background="@color/Grey"
+            />
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/Line"
+            android:id="@+id/ViewFlip">
+
+        </ViewFlipper>
+        <!--Place Order Button-->
+        <TextView
+            android:id="@+id/Place_Order_Button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#5fcc21"
+            android:text="@string/PlaceOrder"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/segoeui"
+            android:layout_alignParentBottom="true"
+            android:elevation="10dp"
+            />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/NavigationView"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        android:background="@color/White"
+        app:itemIconTint="@color/MediumBlue"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/colorPrimary">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

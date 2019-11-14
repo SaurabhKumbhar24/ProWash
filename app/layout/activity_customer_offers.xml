@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustomerOffers">
+
+    <!--Toolbar Layout-->
+    <RelativeLayout
+        android:id="@+id/ToolbarLayoutCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ToolbarCF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:title="@string/offers"
+            app:navigationIcon="@drawable/ic_left_arrow"
+            app:titleTextColor="@color/MediumBlue">
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ToolbarLayoutCF"
+        android:padding="10dp"
+        android:background="@color/FaintBlue">
+
+        <ListView
+            android:id="@+id/OFFList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="5dp">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/OFFList"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_border"
+            android:padding="10dp"
+            android:text="@string/no_more_offers"
+            android:textAlignment="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

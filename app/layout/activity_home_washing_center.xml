@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity.HomeActivityWashingCenter"
+    android:background="@color/White"
+    android:id="@+id/ClientDrawerLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ClientToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MediumBlue"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/Home"
+        app:navigationIcon="@drawable/ic_toggle"
+        app:titleTextColor="@color/White">
+    </android.support.v7.widget.Toolbar>
+
+        <Button
+            android:id="@+id/SyncData"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/MediumBlue"
+            android:drawableStart="@drawable/ic_sync_black_24dp"
+            android:text="@string/sync"
+            android:textColor="@color/White" />
+    <TextView
+        android:id="@+id/MessageT"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/White"
+        android:background="@color/MediumBlue"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:fontFamily="@font/aclonica"
+        android:textAllCaps="true"
+        android:layout_below="@+id/ClientToolbar"/>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MessageT"
+        android:id="@+id/TabLayout"
+        android:background="@color/MediumBlue"
+        app:tabTextColor="@color/White">
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TabLayout"
+        android:id="@+id/pager">
+    </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/ClientNavigationView"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity = "start"
+        android:background="@color/BluishWhite"
+        app:itemIconTint="@color/MediumBlue"
+        app:menu="@menu/client_navigation_menu"
+        app:headerLayout="@layout/header"
+        app:itemTextColor="@color/MediumBlue">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

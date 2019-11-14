@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Confirm Order Heading -->
+    <TextView
+        android:id="@+id/ConfirmOrderHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_order"
+        android:textAllCaps="true"
+        android:textColor="@color/White"
+        android:background="@drawable/mediumblue_border"
+        android:elevation="10dp"
+        android:textAlignment="center"
+        android:textSize="21sp"/>
+
+    <RelativeLayout
+        android:id="@+id/OrderDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_border"
+        android:elevation="10dp">
+
+    <!--Order Type-->
+    <TextView
+        android:id="@+id/OT"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Order Type   :" />
+
+        <TextView
+            android:id="@+id/OrderTypeConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/OT"/>
+
+    <!--Pickup Date-->
+    <TextView
+        android:id="@+id/PUD"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="PickUp Date :"
+        android:layout_below="@+id/OT"/>
+
+        <TextView
+            android:id="@+id/PickupDateConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/PUD"
+            android:layout_below="@+id/OT"/>
+
+     <!--Pickup Time-->
+     <TextView
+         android:id="@+id/PUT"
+         android:layout_width="90dp"
+         android:layout_height="wrap_content"
+         android:text="PickUp Time:"
+         android:layout_below="@+id/PUD"/>
+
+        <TextView
+            android:id="@+id/PickupTimeConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PUD"
+            android:layout_toRightOf="@+id/PUT"/>
+
+     <!--Address-->
+     <TextView
+         android:id="@+id/AC"
+         android:layout_width="90dp"
+         android:layout_height="wrap_content"
+         android:text="Address        :"
+         android:layout_below="@+id/PUT"/>
+
+         <TextView
+             android:id="@+id/AddressConfirm"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/PUT"
+             android:layout_toRightOf="@+id/AC"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/CancelOrderButton"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel1"
+            android:elevation="5dp"
+            android:background="@drawable/white_border"
+            android:textColor="@color/MediumBlue"/>
+
+        <Button
+            android:id="@+id/PlaceOrderConfirm"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="@string/PlaceOrder"
+            android:elevation="10dp"
+            android:background="@drawable/mediumblue_border"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

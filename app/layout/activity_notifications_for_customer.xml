@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FaintFaint"
+    tools:context=".Customer.NotificationsForCustomer">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/NotiToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MediumBlue"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Notifications"
+        app:navigationIcon="@drawable/ic_left_arrow_white"
+        app:titleTextColor="@color/White">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_border">
+
+        <TextView
+            android:id="@+id/NotificationCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/Black"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="80"
+            android:gravity="left|center"
+            android:text="New Notification(s)"
+            android:textColor="@color/Black"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/ClearList"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Clear"
+            android:textColor="@color/MediumBlue"
+            android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/NotificationList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@color/FaintBlue"
+            android:layout_marginTop="2dp"
+            android:dividerHeight="2dp">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="No more notifications"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:background="@drawable/white_border"
+            />
+    </LinearLayout>
+
+</LinearLayout>
