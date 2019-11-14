@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:angle="90"
+                        android:endColor="#ffffff"
+                        android:startColor="#ffffff"
+                        android:type="linear" />
+
+                    <stroke android:width="1dp"
+                        android:color="@android:color/transparent" />
+
+                    <corners android:radius="5dp" />
+
+                    <padding android:bottom="0dp"
+                        android:left="0dp"
+                        android:right="0dp"
+                        android:top="0dp" />
+                </shape>
+            </item>
+            <item>
+                <bitmap android:gravity="center|right"
+                    android:src="@drawable/expandbutton" />
+            </item>
+
+            <item>
+                <bitmap android:gravity="center|left"
+                    android:src="@drawable/clock"/>
+            </item>
+        </layer-list>
+    </item>
+</selector>
